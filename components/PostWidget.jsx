@@ -6,15 +6,15 @@ import { getRecentPosts, getSimilarPosts } from '../services';
 
 const PostWidget = ({ categories, slug}) => {
 
-    const [relatedPost, setRelatedPost] = useState([]);
+    const [relatedPosts, setRelatedPosts] = useState([]);
 
     useEffect(() => {
         if(slug){
             getSimilarPosts(categories, slug)
-                .then((result) => setRelatedPost(result))
+                .then((result) => setRelatedPosts(result))
         }else{
             getRecentPosts()
-                .then((result) => setRelatedPost(result))
+                .then((result) => setRelatedPosts(result))
         }
     }, [slug]);
 
