@@ -4,7 +4,7 @@ import { getCategories } from '../services';
 
 
 export default function Header() {
-    const [categories, setCategories] = useState(initialState);
+    const [categories, setCategories] = useState([]);
     
     useEffect(() => {
         getCategories()

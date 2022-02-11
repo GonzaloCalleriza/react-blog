@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Layout } from '../components';
-
-import '../styles/globals.css';
 
 import '../styles/globals.scss';
 

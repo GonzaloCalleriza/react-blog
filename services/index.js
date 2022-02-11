@@ -156,3 +156,4 @@ export const getComments = async (slug) => {
 
     return result.comments;
 }
+
